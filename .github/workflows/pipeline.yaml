@@ -42,7 +42,7 @@ jobs:
       # We use a dedicated action for the security check
       # https://github.com/stelligent/cfn_nag
       - name: Security
-        uses: stelligent/cfn_nag@master
+        uses: stelligent/cfn_nag@main
         with:
           input_path: ./cdk.out
           extra_args: -t ..*\.template\.json
